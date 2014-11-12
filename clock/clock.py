@@ -25,11 +25,11 @@ class Clock(object):
       time.sleep(delay)
       self.write(m[1:], delay)
     else:
-      self._serial.write(s.encode())
+      self._serial.write(m.encode())
 
   def write_time(self):
     now = datetime.datetime.now()
-    s = now.strftime()
+    s = now.strftime('%b %d %Y %I:%M%p')
     self.write(s)
 
   # Private

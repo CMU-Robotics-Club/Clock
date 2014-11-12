@@ -50,9 +50,11 @@ if __name__ == '__main__':
       for event in new_events:
         s = "{} - {}".format(event['name'], event['location'])
         clock.write(s)
-        time.sleep(2)
+        time.sleep(5)
 
       events = new_events
+    else:
+      logger.info("no new events")
 
     clock.write_time()
 
