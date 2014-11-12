@@ -5,6 +5,7 @@ from rc import APIClient
 import argparse
 import logging
 import time
+import sys
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
